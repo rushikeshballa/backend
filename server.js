@@ -1,6 +1,7 @@
 const http=require('http')
-http.createServer(()=>{
-
-    console.log("scvsfd");
+http.createServer((req,res)=>{
+    console.log(res);
+    
+    // console.log("scvsfd");
     
 }).listen(4500)
