@@ -33,8 +33,9 @@ app.get("/students",function(req,res){
 })
 
 app.get("/pug",function(req,res) {
-    res.render('home')
+    res.render('home',{students:students})
 })
+
 
 app.get("/student/:i",function(req,res) {
     var id=+req.params.i
