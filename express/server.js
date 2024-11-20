@@ -1,6 +1,7 @@
 const express= require("express")
 const app=express()
 const students = require('./students')
+app.set('view engine' , 'pug')
 
 app.get("/",function(req,res) {
     res.send("home page")
@@ -31,6 +32,9 @@ app.get("/students",function(req,res){
         res.send(`<table border="1px" >${tb}</table>`)
 })
 
+app.get("/pug",function(req,res) {
+    res.render('home')
+})
 
 app.get("/student/:i",function(req,res) {
     var id=+req.params.i
