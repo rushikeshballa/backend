@@ -2,9 +2,15 @@ const express= require("express")
 const app=express()
 const students = require('./students')
 app.set('view engine' , 'pug')
+const fs=require('fs')
 
 app.get("/",function(req,res) {
     res.send("home page")
+})
+
+app.get("/rating",function (req,res) {
+    var rat = JSON.parse(fs.readFileSync("rating.txt").toString()) 
+    res.render("ratings",{rat})
 })
  
 app.get("/add/:fn/:fb",function (req,res) {
