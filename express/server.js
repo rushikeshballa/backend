@@ -13,6 +13,7 @@ app.get("/rating",function (req,res) {
     res.render("ratings",{rat})
 })
  
+
 app.get("/add/:fn/:fb",function (req,res) {
   var x=parseInt(req.params.fb)+parseInt(req.params.fn)
   res.send(x.toString())   
