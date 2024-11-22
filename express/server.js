@@ -20,7 +20,7 @@ app.get("/add/:fn/:fb",function (req,res) {
 
 app.get("/index",function(req,res){
     res.sendFile(__dirname+("/index.html"))
-})
+}) 
 
 app.get("/students",function(req,res){
         var tb="";
