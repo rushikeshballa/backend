@@ -3,9 +3,6 @@ const app=express()
 const students = require('./students')
 app.set('view engine' , 'pug')
 const fs=require('fs')
-
-
-
 app.get("/",function(req,res) {
     res.send("home page")
 })
