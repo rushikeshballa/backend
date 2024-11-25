@@ -7,6 +7,7 @@ app.get("/",function(req,res) {
     res.send("home page")
 })
 
+
 app.get("/rating",function (req,res) {
     var rat = JSON.parse(fs.readFileSync("rating.txt").toString()) 
     res.render("ratings",{rat})
