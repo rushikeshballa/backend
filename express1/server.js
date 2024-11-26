@@ -1,7 +1,10 @@
 const express= require('express')
 const app=express();
 const fs=require('fs')
-
+const cors= require('cors')
+app.use(cors())
+const cookieParser=require('cookie-parser')
+const BodyParser=require('body-parser')
 
 
 
