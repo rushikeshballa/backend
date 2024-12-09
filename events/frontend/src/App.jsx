@@ -5,11 +5,6 @@ function App() {
   return (
   <div>
   <h1>NAVBAR</h1>
-  
-
-
-
-  <h1>Footter</h1>
   </div>
   );
 }
